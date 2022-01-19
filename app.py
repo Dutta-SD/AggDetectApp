@@ -12,11 +12,16 @@ if __name__ == "__main__":
             default="",
             label="Text to Predict",
         ),
-        outputs=["text", "text"],
+        outputs=[
+            gradio.outputs.Textbox(type="auto", label="Aggression Prediction"),
+            gradio.outputs.Textbox(type="auto", label="Misogyny Prediction"),
+        ],
         title="Aggression and Misogyny Predictor",
         theme="dark-huggingface",
         live=True,
     )
+
+    # Launch the interface
     interface.launch(
         share=False,
         debug=True,

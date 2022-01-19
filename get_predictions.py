@@ -3,7 +3,7 @@ import utils
 import joblib
 
 
-def get_predictions(text: str) -> dict:
+def get_predictions(text: str) -> tuple:
     """
     Returns predictions of aggressions and misogyny as per the model
     """
@@ -17,10 +17,7 @@ def get_predictions(text: str) -> dict:
     pred_1 = model_1.predict(cleaned_data)[0]
     pred_2 = model_2.predict(cleaned_data)[0]
 
-    return {
-        "task_1_pred": utils.TASK_1_MAP[pred_1],
-        "task_2_pred": utils.TASK_2_MAP[pred_2],
-    }
+    return (utils.TASK_1_MAP[pred_1], utils.TASK_2_MAP[pred_2])
 
 
 if __name__ == "__main__":

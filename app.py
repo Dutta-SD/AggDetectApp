@@ -7,6 +7,10 @@ if __name__ == "__main__":
     interface = gradio.Interface(
         get_predictions,
         inputs="text",
-        outputs="text",
+        outputs=["text", "text"],
+        title="Aggression and Misogyny Predictor",
+        theme="dark-huggingface",
     )
-    interface.launch(title="Aggression and Misogyny Predictor")
+    interface.launch(
+        share=False,
+    )

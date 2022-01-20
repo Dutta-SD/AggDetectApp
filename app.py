@@ -3,8 +3,8 @@ from get_predictions import get_predictions
 import gradio
 
 """
-@todo: refactor code + fix nltk download
-@body : change file directory, 
+@todo refactor code + fix nltk download
+@body change file directory, 
 """
 
 

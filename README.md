@@ -5,7 +5,9 @@ colorTo: blue
 sdk: gradio
 app_file: app.py
 pinned: false
+python_version: 3.7.0
 ---
+
 # Agression and Misogyny Detection App
 <!-- Intro and about the project -->
 This app detects presence of Aggression and Misogyny in online social media texts. Try it out [here](https://huggingface.co/spaces/sdutta28/AggDetectApp)

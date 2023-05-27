@@ -18,8 +18,8 @@ if __name__ == "__main__":
             label="Text to Predict",
         ),
         outputs=[
-            gradio.outputs.Textbox(type="auto", label="Aggression Prediction"),
-            gradio.outputs.Textbox(type="auto", label="Misogyny Prediction"),
+            gradio.outputs.Textbox(type="text", label="Aggression Prediction"),
+            gradio.outputs.Textbox(type="text", label="Misogyny Prediction"),
         ],
         title="Aggression and Misogyny Predictor",
         theme="dark-huggingface",

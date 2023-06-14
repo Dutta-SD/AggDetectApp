@@ -18,7 +18,3 @@ def get_predictions(text: str) -> tuple:
     pred_2 = model_2.predict(cleaned_data)[0]
 
     return (utils.TASK_1_MAP[pred_1], utils.TASK_2_MAP[pred_2])
-
-
-if __name__ == "__main__":
-    print(get_predictions("Hello"))

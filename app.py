@@ -2,11 +2,6 @@
 from get_predictions import get_predictions
 import gradio
 
-"""
-@todo refactor code + fix nltk download
-@body change file directory, 
-"""
-
 
 if __name__ == "__main__":
     interface = gradio.Interface(

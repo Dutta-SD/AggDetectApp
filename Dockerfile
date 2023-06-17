@@ -16,9 +16,8 @@ ENV HOME=/home/user \
 
 WORKDIR $HOME/app
 
-RUN pwd
-RUN ls -alt
-
 COPY --chown=user . $HOME/app
+
+RUN ls -alt
 
 CMD ["python", "app.py"]

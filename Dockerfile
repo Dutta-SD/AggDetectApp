@@ -16,9 +16,8 @@ ENV HOME=/home/user \
 
 WORKDIR $HOME/app
 
-RUN chmod -R 777
 RUN pwd
-RUN  ls -alt
+RUN ls -alt
 
 COPY --chown=user . $HOME/app
 

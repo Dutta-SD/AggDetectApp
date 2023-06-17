@@ -2,7 +2,7 @@
 title: AggDetectApp -- Detect Aggression and Misogyny
 colorFrom: black
 colorTo: blue
-sdk: gradio
+sdk: docker
 app_file: app.py
 pinned: false
 python_version: 3.10.5

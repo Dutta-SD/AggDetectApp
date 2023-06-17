@@ -1,5 +1,5 @@
 # App
-from get_predictions import get_predictions
+from components.get_predictions import get_predictions
 import gradio
 
 

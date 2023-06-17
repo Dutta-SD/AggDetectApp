@@ -8,4 +8,5 @@ jinja2
 pillow
 nltk
 joblib
-sklearn
+scikit-learn
+black

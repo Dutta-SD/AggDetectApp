@@ -1,22 +1,9 @@
-# Utilities
 import string
 import nltk
 import re
+from components.config import app_config
 
-nltk.download("stopwords", download_dir="./nltk")
-
-# Constants
-TASK_1_MODEL = " models/TASK_A_model_final.pkl"
-TASK_2_MODEL = " models/TASK_B_model_final.pkl"
-TASK_1_MAP = {
-    0: "NAG - Non Aggressive Content",
-    1: "CAG - Covertly Aggressive Content",
-    2: "OAG - Overtly Aggressive Content",
-}
-TASK_2_MAP = {
-    0: "NGEN - Non Misogynistic Content",
-    1: "GEN - Misogynistic Content",
-}
+nltk.data.path.append(app_config.NLTK_DATA_PATH)
 
 
 # Cleans one text

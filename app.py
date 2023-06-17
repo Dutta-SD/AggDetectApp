@@ -54,4 +54,8 @@ if __name__ == "__main__":
     interface = get_interface()
 
     # Launch the interface
-    interface.launch(share=False, debug=True)
+    interface.launch(
+        server_name="0.0.0.0",
+        server_port=7860,
+        share=False,
+    )

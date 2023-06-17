@@ -1,11 +1,5 @@
-# App
-from get_predictions import get_predictions
+from components.get_predictions import get_predictions
 import gradio
-
-"""
-@todo refactor code + fix nltk download
-@body change file directory, 
-"""
 
 
 if __name__ == "__main__":
@@ -18,8 +12,8 @@ if __name__ == "__main__":
             label="Text to Predict",
         ),
         outputs=[
-            gradio.outputs.Textbox(type="text", label="Aggression Prediction"),
-            gradio.outputs.Textbox(type="text", label="Misogyny Prediction"),
+            gradio.outputs.Textbox(type="str", label="Aggression Prediction"),
+            gradio.outputs.Textbox(type="str", label="Misogyny Prediction"),
         ],
         title="Aggression and Misogyny Predictor",
         theme="dark-huggingface",

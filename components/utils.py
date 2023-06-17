@@ -3,7 +3,7 @@ import nltk
 import re
 from components.config import app_config
 
-nltk.data.path.append(app_config.NLTK_DATA_PATH)
+nltk.download("stopwords", download_dir=app_config.NLTK_DATA_PATH)
 
 
 # Cleans one text

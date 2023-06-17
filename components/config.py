@@ -12,7 +12,7 @@ class Settings:
         0: "NGEN - Non Misogynistic Content",
         1: "GEN - Misogynistic Content",
     }
-    NLTK_DATA_PATH = "/static/ntlk"
+    NLTK_DATA_PATH = "static/ntlk"
 
 
 app_config = Settings()

@@ -1,28 +1,25 @@
-FROM python:3.9
+FROM python:3.10
 
 WORKDIR /code
 
 COPY ./requirements.txt requirements.txt
-COPY ./static static/
-COPY ./components components/
-COPY ./app.py app.py
-
-RUN  ls -alt
 
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
-# Set up a new user named "user" with user ID 1000
 RUN useradd -m -u 1000 user
-# Switch to the "user" user
+
 USER user
 # Set home to the user's home directory
 ENV HOME=/home/user \
-    PATH=/home/user/.local/bin:$PATH
+    PATH=/home/user/.local/bin:$PATH\
+    NLTK_DATA=/home/user/app/static/nltk
 
-# Set the working directory to the user's home directory
 WORKDIR $HOME/app
 
-# Copy the current directory contents into the container at $HOME/app setting the owner to the user
+RUN chmod -R 777
+RUN pwd
+RUN  ls -alt
+
 COPY --chown=user . $HOME/app
 
 CMD ["python", "app.py"]

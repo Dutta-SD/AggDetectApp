@@ -5,6 +5,9 @@ colorTo: blue
 sdk: gradio
 app_file: app.py
 pinned: false
+sdk: gradio
+sdk_version: 2.7.0
+python_version: 
 ---
 
 # Agression and Misogyny Detection App

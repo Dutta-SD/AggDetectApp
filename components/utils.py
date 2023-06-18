@@ -1,8 +1,8 @@
 import string
 import nltk
 import re
-
-nltk.download("stopwords")
+from nltk.stem.porter import PorterStemmer
+import warnings
 
 
 # Cleans one text
@@ -32,8 +32,17 @@ def clean_one_text(text: str) -> str:
 
     s.difference_update(not_words)
 
-    stmr = nltk.stem.porter.PorterStemmer()
+    stmr = PorterStemmer()
     tokens = [token for token in tk.tokenize(new_string) if token.lower() not in s]
     clean_tokens = [stmr.stem(token) for token in tokens]
     text = " ".join(clean_tokens)
     return text
+
+
+def setup_nltk():
+    nltk.download("stopwords")
+
+
+def initialize():
+    warnings.filterwarnings("ignore")
+    setup_nltk()

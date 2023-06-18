@@ -12,6 +12,7 @@ class Settings:
         0: "NGEN - Non Misogynistic Content",
         1: "GEN - Misogynistic Content",
     }
+    NUM_EXPLAINER_FEATURES: int = 10
 
 
 app_config = Settings()

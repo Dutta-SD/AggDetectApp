@@ -8,26 +8,27 @@ pinned: false
 python_version: 3.10.5
 ---
 
-# Agression and Misogyny Detection App
+## Agression and Misogyny Detection App
 
-<!-- Intro and about the project -->
+Social media platforms have become hotspots for the proliferation of trolling, aggression, and hate speech. With an overwhelming volume of social media data being generated every day, manual inspection is simply impractical. In response to this pressing issue, we present an efficient and rapid method for detecting aggression and misogyny in online social media texts.
 
-This app detects presence of Aggression and Misogyny in online social media texts. Try it out [here](https://huggingface.co/spaces/sdutta28/AggDetectApp)
+What sets our model apart is not only its high performance but also its significantly reduced training time, model size, and resource requirements. These advantages make our model highly practical for fast inference, ensuring prompt identification of aggression and misogyny in online social media texts.
 
-## Technologies Used
+> [Try it out here](https://huggingface.co/spaces/sdutta28/AggDetectApp)
 
-<!-- Tech stack, libraries etc -->
+### Features
 
-`Python, Transformers, XgBoost, Scikit-Learn`
+- Detection of Aggression and Misogyny in texts
+- LIME based prediction for explainability
 
-## Workflow
+### Tech Stack
 
-<!-- In some detail of how this works -->
-
-- A text is given to the app
-- It predicts aggression and misogyny in the application
-
-## Results
+- Python
+- XgBoost
+- Scikit-Learn
+- HuggingFace Transformers
+- LIME
+- Docker
 
 ### Aggression Detection Results
 
@@ -41,16 +42,16 @@ This app detects presence of Aggression and Misogyny in online social media text
 | -------- | ----- |
 | F1 Score | 0.852 |
 
-## How to Run
+## How to Run Locally
 
 <!-- Installation and Running Steps -->
 
 - Clone the repo
 - Install python requirements using `$ pip install -r requirements.txt`
-- Run the server using `$ python main.py`
+- Run the server using `$ python app.py`
 
 ## Additional Links
 
-<!-- Kaggle model training links -->
-
+- [Try the App Here](https://huggingface.co/spaces/sdutta28/AggDetectApp)
 - [[PDF] Paper published at ICON 2021](https://aclanthology.org/2021.icon-main.60.pdf)
+- [Model training Repo](https://github.com/Dutta-SD/AggDetect)

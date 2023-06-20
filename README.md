@@ -48,7 +48,7 @@ What sets our model apart is not only its high performance but also its signific
 
 - Clone the repo
 - Install python requirements using `$ pip install -r requirements.txt`
-- Run the server using `$ python main.py`
+- Run the server using `$ python app.py`
 
 ## Additional Links
 

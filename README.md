@@ -16,6 +16,8 @@ What sets our model apart is not only its high performance but also its signific
 
 > [Try it out here](https://huggingface.co/spaces/sdutta28/AggDetectApp)
 
+_Since this is based on XGBoost + Tf-Idf, accuracy may not be so high. This can be improved by using LLMs_
+
 ### Features
 
 - Detection of Aggression and Misogyny in texts
